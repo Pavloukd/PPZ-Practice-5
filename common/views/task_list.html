@@ -1,0 +1,13 @@
+<h1 align="center">Task List</h1>
+<div align="center" style="padding-bottom: 20pt;">
+    <button>
+    <a href="add">Add New Task</a>
+    </button>
+</div>
+{% for task in tasks %}
+<div align="center" style="border: solid; display: inline-block; padding: 5pt;">
+    <h2>{{ task.title }}</h2>
+    <p>Priority: {{ task.priority }}</p>
+    <p>Published at: {{task.published_at}}</p>
+</div>
+{% endfor %}

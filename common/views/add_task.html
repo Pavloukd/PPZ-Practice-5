@@ -1,0 +1,14 @@
+<div align="center">
+    <form method="post">
+        {% csrf_token %}
+        <div style="border: solid; display: inline-block; padding: 5pt;">
+            {{ form.as_p }}
+        </div>
+        <div style="padding: 20pt;">
+            <button type="submit" style="background-color: green; color: white;">Add Task</button>
+            <button>
+                <a href="..">Back to Task List</a>
+            </button>
+        </div>
+    </form>
+</div>
